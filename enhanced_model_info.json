@@ -1,0 +1,29 @@
+{
+  "model_name": "Gradient Boosting",
+  "training_date": "2025-08-22T13:48:30.385746",
+  "version": "enhanced_v2.0",
+  "metrics": {
+    "cv_f1_score": 0.9321906465919773,
+    "accuracy": 0.93675,
+    "precision": 0.9318289310799904,
+    "recall": 0.93675,
+    "f1_score": 0.9335603090200082,
+    "best_params": {
+      "classifier__learning_rate": 0.1,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 100
+    }
+  },
+  "target_classes": [
+    "Damaged",
+    "Needs Action",
+    "Good"
+  ],
+  "improvements": [
+    "Realistic condition assignment based on asset characteristics",
+    "Advanced feature engineering",
+    "Hyperparameter tuning with GridSearchCV",
+    "Feature selection",
+    "Enhanced risk scoring system"
+  ]
+}
