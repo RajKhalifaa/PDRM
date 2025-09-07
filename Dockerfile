@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     gnupg \
     unzip \
     xvfb \
+    dos2unix \
     libglib2.0-0 \
     libnss3 \
     libgconf-2-4 \
@@ -48,6 +49,9 @@ COPY . .
 # Copy and set permissions for entrypoint script
 COPY entrypoint.sh /app/entrypoint.sh
 COPY healthcheck.py /app/healthcheck.py
+
+# Fix line endings for scripts and set permissions
+RUN dos2unix /app/entrypoint.sh /app/healthcheck.py || true
 RUN chmod +x /app/entrypoint.sh /app/healthcheck.py
 
 # Create necessary directories

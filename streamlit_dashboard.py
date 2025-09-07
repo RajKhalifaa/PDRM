@@ -58,26 +58,26 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Custom CSS for PDRM Logistics light theme
+# Custom CSS for PDRM Professional Dark Theme (Kuarters Style)
 st.markdown(
     """
 <style>
-    /* Set main background to soft grey-white theme */
+    /* Set main background to very dark theme like Kuarters dashboard */
     .main .block-container {
-        background-color: #f5f5f5;
+        background-color: #0f172a;
         padding-top: 1rem;
-        color: #1e3a8a;
+        color: white;
     }
     
-    /* Main dashboard background */
+    /* Main dashboard background - very dark */
     .stApp {
-        background-color: #f5f5f5;
-        color: #1e3a8a;
+        background-color: #0f172a;
+        color: white;
     }
     
-    /* Main header with darker PDRM theme - keep white text */
+    /* Main header with professional dark theme */
     .main-header {
-        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
         color: white !important;
         font-size: 2.5rem;
         font-weight: bold;
@@ -85,34 +85,34 @@ st.markdown(
         padding: 1.5rem 2rem;
         border-radius: 12px;
         margin-bottom: 2rem;
-        box-shadow: 0 4px 12px rgba(30,58,138,0.4);
-        border: 1px solid #1e40af;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        border: 1px solid #475569;
     }
     
-    /* Section headers with darker blue theme - keep white text */
+    /* Section headers with dark theme */
     .section-header {
-        background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
         color: white !important;
         font-size: 1.8rem;
         font-weight: bold;
         padding: 1rem 1.5rem;
         border-radius: 10px;
         margin: 1.5rem 0;
-        box-shadow: 0 3px 8px rgba(30,64,175,0.4);
-        border: 1px solid #2563eb;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+        border: 1px solid #475569;
     }
     
-    /* Subsection headers with darker blue theme - keep white text */
+    /* Subsection headers with lighter dark theme */
     .subsection-header {
-        background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+        background: linear-gradient(135deg, #334155 0%, #475569 100%);
         color: white !important;
         font-size: 1.4rem;
         font-weight: bold;
         padding: 0.8rem 1.2rem;
         border-radius: 8px;
         margin: 1rem 0;
-        box-shadow: 0 2px 6px rgba(37,99,235,0.4);
-        border: 1px solid #3b82f6;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        border: 1px solid #64748b;
     }
     
     /* Ensure header text remains white */
@@ -120,15 +120,15 @@ st.markdown(
         color: white !important;
     }
     
-    /* KPI cards with darker blue theme - keep white text */
+    /* KPI cards with dark theme like Kuarters */
     .kpi-card {
-        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
         color: white !important;
         padding: 1.5rem;
         border-radius: 12px;
-        border: 2px solid #2563eb;
+        border: 1px solid #475569;
         margin: 0.5rem 0;
-        box-shadow: 0 4px 12px rgba(30,58,138,0.4);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
     
     /* Ensure KPI card text remains white */
@@ -155,7 +155,7 @@ st.markdown(
     }
     
     .metric-label {
-        background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
         color: white;
         font-size: 0.95rem;
         font-weight: bold;
@@ -163,91 +163,91 @@ st.markdown(
         border-radius: 6px;
         margin-top: 0.8rem;
         display: inline-block;
-        box-shadow: 0 2px 4px rgba(30,64,175,0.4);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
     
-    /* Sidebar styling with darker blue theme */
+    /* Sidebar styling with very dark theme like Kuarters */
     .sidebar .sidebar-content {
-        background-color: #1e3a8a !important;
+        background-color: #0f172a !important;
     }
     
-    /* Force sidebar background to be darker blue */
+    /* Force sidebar background to very dark */
     .css-1d391kg {
-        background-color: #1e3a8a !important;
+        background-color: #0f172a !important;
         color: white !important;
     }
     
     /* Streamlit sidebar container */
     .stSidebar {
-        background-color: #1e3a8a !important;
+        background-color: #0f172a !important;
     }
     
     /* Alternative sidebar selectors */
     section[data-testid="stSidebar"] {
-        background-color: #1e3a8a !important;
+        background-color: #0f172a !important;
     }
     
     section[data-testid="stSidebar"] > div {
-        background-color: #1e3a8a !important;
+        background-color: #0f172a !important;
     }
     
     /* Sidebar content wrapper */
     .css-1cypcdb, .css-17eq0hr {
-        background-color: #1e3a8a !important;
+        background-color: #0f172a !important;
     }
     
-    /* Tab styling with mixed theme */
+    /* Tab styling with very dark theme like Kuarters */
     .stTabs [data-baseweb="tab-list"] {
-        background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
         border-radius: 10px;
         padding: 0.3rem;
-        border: 1px solid rgba(255,255,255,0.2);
+        border: 1px solid #475569;
     }
     
     .stTabs [data-baseweb="tab"] {
-        background-color: #9ca3af;
+        background-color: #1e293b;
         color: white !important;
         font-weight: bold;
         border-radius: 8px;
         margin: 0.1rem;
-        border: 1px solid #9ca3af;
+        border: 1px solid #334155;
     }
     
     .stTabs [data-baseweb="tab"][aria-selected="true"] {
-        background-color: #6b7280;
+        background-color: #334155;
         color: white !important;
-        border: 1px solid #4b5563;
+        border: 1px solid #475569;
     }
     
     /* Filter section styling */
     .filter-header {
-        background-color: #6b7280;
+        background-color: #1e293b;
         color: white;
         font-size: 1.2rem;
         font-weight: bold;
         padding: 0.8rem 1.2rem;
         border-radius: 8px;
         margin-bottom: 1.5rem;
-        box-shadow: 0 3px 6px rgba(107,114,128,0.3);
-        border: 1px solid #9ca3af;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+        border: 1px solid #334155;
     }
     
-    /* Improve sidebar text for darker theme - WHITE text for visibility */
+    /* Improve sidebar text for dark theme - WHITE text for visibility */
     .css-1d391kg, .css-1d391kg p, .stSidebar .stMarkdown {
         color: white !important;
         font-weight: 500 !important;
     }
     
-    /* Sidebar input styling for darker theme */
+    /* Sidebar input styling for very dark theme */
     .stSidebar .stSelectbox > div > div {
-        background-color: #2563eb !important;
-        border: 2px solid #3b82f6 !important;
+        background-color: #1e293b !important;
+        border: 2px solid #334155 !important;
         border-radius: 8px !important;
         color: white !important;
     }
     
     .stSidebar .stSelectbox div[data-baseweb="select"] {
-        background-color: #2563eb !important;
+        background-color: #1e293b !important;
         color: white !important;
     }
     
@@ -260,10 +260,10 @@ st.markdown(
     
     /* Sidebar slider styling */
     .stSidebar .stSlider > div > div > div {
-        background-color: #2563eb !important;
+        background-color: #1e293b !important;
         border-radius: 8px !important;
         padding: 0.8rem !important;
-        border: 1px solid #3b82f6 !important;
+        border: 1px solid #334155 !important;
     }
     
     /* Sidebar labels styling - WHITE text */
@@ -286,23 +286,23 @@ st.markdown(
     
     /* Sidebar dropdown options */
     .stSidebar .stSelectbox > div > div > div {
-        background-color: #1e40af !important;
+        background-color: #1e293b !important;
         color: white !important;
     }
     
     /* Selectbox dropdown menu styling */
     .stSidebar div[data-baseweb="popover"] {
-        background-color: #1e40af !important;
+        background-color: #1e293b !important;
     }
     
     .stSidebar div[data-baseweb="popover"] div {
-        background-color: #1e40af !important;
+        background-color: #1e293b !important;
         color: white !important;
     }
     
-    /* General text styling for darker theme with dark blue text */
+    /* General text styling for dark theme with white text */
     .stMarkdown, .stText, p, span, div, label {
-        color: #1e3a8a !important;
+        color: white !important;
         font-weight: 400;
     }
     
@@ -312,37 +312,39 @@ st.markdown(
         font-weight: bold !important;
     }
     
-    /* Ensure main text content uses dark blue */
+    /* Ensure main text content uses white */
     .main .block-container .stMarkdown p {
-        color: #1e3a8a !important;
+        color: white !important;
     }
     
-    /* Tab content text should be dark blue */
+    /* Tab content text should be white */
     .stTabs [role="tabpanel"] .stMarkdown {
-        color: #1e3a8a !important;
+        color: white !important;
     }
     
-    /* Headers and titles in dark blue */
+    /* Headers and titles in white */
     h1, h2, h3, h4, h5, h6 {
-        color: #1e3a8a !important;
+        color: white !important;
     }
     
-    /* Chat message styling - FORCE WHITE TEXT */
+    /* Chat message styling - very dark theme like Kuarters */
     .chat-message-user, .chat-message-assistant {
-        background-color: #6b7280 !important;
+        background-color: #1e293b !important;
         color: white !important;
         padding: 10px !important;
         margin: 5px 0 !important;
         border-radius: 10px !important;
-        border: 1px solid #9ca3af !important;
+        border: 1px solid #334155 !important;
     }
     
     .chat-message-user {
         margin-left: 20% !important;
+        background-color: #334155 !important;
     }
     
     .chat-message-assistant {
         margin-right: 20% !important;
+        background-color: #1e293b !important;
     }
     
     .chat-message-user *, .chat-message-assistant * {
@@ -364,13 +366,14 @@ st.markdown(
     
     /* Metric labels outside of cards */
     .stMetric label {
-        color: #1e3a8a !important;
+        color: white !important;
         font-weight: bold !important;
     }
     
-    /* Table text in dark blue */
+    /* Table text in white for dark theme */
     .stDataFrame table {
-        color: #1e3a8a !important;
+        color: white !important;
+        background-color: #1e293b !important;
     }
     
     /* Make selectbox and input labels more visible */
@@ -380,15 +383,15 @@ st.markdown(
         font-size: 1rem !important;
     }
     
-    /* Button styling - ensure white text for ALL button content */
+    /* Button styling - very dark theme */
     .stButton > button {
-        background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
         color: white !important;
         font-weight: bold !important;
-        border: 1px solid #1e40af;
+        border: 1px solid #334155;
         border-radius: 8px;
         padding: 0.5rem 1.5rem;
-        box-shadow: 0 2px 6px rgba(30,64,175,0.4);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
     
     /* Ensure ALL text inside buttons is white */
@@ -398,8 +401,8 @@ st.markdown(
     }
     
     .stButton > button:hover {
-        background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%) !important;
-        box-shadow: 0 4px 8px rgba(30,64,175,0.5);
+        background: linear-gradient(135deg, #334155 0%, #475569 100%) !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
         color: white !important;
     }
     
@@ -410,7 +413,7 @@ st.markdown(
     
     /* Primary buttons */
     .stButton > button[kind="primary"] {
-        background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
         color: white !important;
     }
     
@@ -420,46 +423,46 @@ st.markdown(
     
     /* Secondary buttons */
     .stButton > button[kind="secondary"] {
-        background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%) !important;
+        background: linear-gradient(135deg, #334155 0%, #475569 100%) !important;
         color: white !important;
-        border: 1px solid #2563eb !important;
+        border: 1px solid #475569 !important;
     }
     
     .stButton > button[kind="secondary"] * {
         color: white !important;
     }
     
-    /* Success/Error message styling - dark blue text on light background */
+    /* Success/Error message styling - very dark theme */
     .stAlert {
-        background-color: #e0f2fe !important;
-        color: #1e3a8a !important;
+        background-color: #1e293b !important;
+        color: white !important;
         border-radius: 8px;
-        border-left: 4px solid #1e40af;
+        border-left: 4px solid #334155;
     }
     
     .stSuccess {
-        background-color: #e8f5e8 !important;
-        color: #1e3a8a !important;
+        background-color: #064e3b !important;
+        color: white !important;
     }
     
     .stError {
-        background-color: #ffebee !important;
-        color: #1e3a8a !important;
+        background-color: #7f1d1d !important;
+        color: white !important;
     }
     
     .stWarning {
-        background-color: #fff8e1 !important;
-        color: #1e3a8a !important;
+        background-color: #78350f !important;
+        color: white !important;
     }
     
     .stInfo {
-        background-color: #e3f2fd !important;
-        color: #1e3a8a !important;
+        background-color: #1e293b !important;
+        color: white !important;
     }
     
     /* Make metric labels more prominent */
     .metric-label {
-        background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
         color: white !important;
         font-size: 0.95rem !important;
         font-weight: bold !important;
@@ -467,23 +470,23 @@ st.markdown(
         border-radius: 6px !important;
         margin-top: 0.8rem !important;
         display: inline-block !important;
-        box-shadow: 0 2px 4px rgba(30,64,175,0.4) !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
     }
     
-    /* Enhanced metrics cards with better text styling */
+    /* Enhanced metrics cards with very dark theme */
     div[data-testid="metric-container"] {
-        background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
-        border: 1px solid #3b82f6 !important;
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+        border: 1px solid #475569 !important;
         padding: 1rem !important;
         border-radius: 12px !important;
-        box-shadow: 0 4px 12px rgba(30,64,175,0.3) !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
         transition: all 0.3s ease !important;
         color: white !important;
     }
     
     div[data-testid="metric-container"]:hover {
         transform: translateY(-2px) !important;
-        box-shadow: 0 6px 16px rgba(30,64,175,0.4) !important;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.5) !important;
     }
     
     /* Ensure ALL text inside metric cards is white */
@@ -510,53 +513,53 @@ st.markdown(
     }
     
     /* Card boxes with blue backgrounds - ensure white text */
-    [style*="background: linear-gradient(135deg, #1e40af"] * {
+    [style*="background: linear-gradient(135deg, #1e293b"] * {
         color: white !important;
     }
     
-    [style*="background-color: #1e40af"] * {
+    [style*="background-color: #1e293b"] * {
         color: white !important;
     }
     
-    [style*="background-color: #1e3a8a"] * {
+    [style*="background-color: #334155"] * {
         color: white !important;
     }
     
-    [style*="background-color: #2563eb"] * {
+    [style*="background-color: #334155"] * {
         color: white !important;
     }
     
     /* Streamlit container with blue backgrounds */
-    .element-container:has([style*="#1e40af"]) * {
+    .element-container:has([style*="#1e293b"]) * {
         color: white !important;
     }
     
-    .element-container:has([style*="#1e3a8a"]) * {
+    .element-container:has([style*="#334155"]) * {
         color: white !important;
     }
     
-    .element-container:has([style*="#2563eb"]) * {
+    .element-container:has([style*="#334155"]) * {
         color: white !important;
     }
     
     /* All text inside div with blue background */
-    div[style*="background-color:#1e40af"] * {
+    div[style*="background-color:#1e293b"] * {
         color: white !important;
     }
     
-    div[style*="background:#1e40af"] * {
+    div[style*="background:#1e293b"] * {
         color: white !important;
     }
     
-    div[style*="background-color: #1e40af"] * {
+    div[style*="background-color: #1e293b"] * {
         color: white !important;
     }
     
-    div[style*="background: #1e40af"] * {
+    div[style*="background: #1e293b"] * {
         color: white !important;
     }
     
-    div[style*="linear-gradient(135deg, #1e40af"] * {
+    div[style*="linear-gradient(135deg, #1e293b"] * {
         color: white !important;
     }
     
@@ -592,29 +595,29 @@ st.markdown(
     }
     
     /* Force white text in all custom blue card divs */
-    div[style*="background: linear-gradient(135deg, #1e40af"] p {
+    div[style*="background: linear-gradient(135deg, #1e293b"] p {
         color: white !important;
     }
     
-    div[style*="background: linear-gradient(135deg, #1e40af"] h1,
-    div[style*="background: linear-gradient(135deg, #1e40af"] h2,
-    div[style*="background: linear-gradient(135deg, #1e40af"] h3,
-    div[style*="background: linear-gradient(135deg, #1e40af"] h4,
-    div[style*="background: linear-gradient(135deg, #1e40af"] h5,
-    div[style*="background: linear-gradient(135deg, #1e40af"] h6 {
+    div[style*="background: linear-gradient(135deg, #1e293b"] h1,
+    div[style*="background: linear-gradient(135deg, #1e293b"] h2,
+    div[style*="background: linear-gradient(135deg, #1e293b"] h3,
+    div[style*="background: linear-gradient(135deg, #1e293b"] h4,
+    div[style*="background: linear-gradient(135deg, #1e293b"] h5,
+    div[style*="background: linear-gradient(135deg, #1e293b"] h6 {
         color: white !important;
     }
     
-    div[style*="background: linear-gradient(135deg, #1e40af"] span {
+    div[style*="background: linear-gradient(135deg, #1e293b"] span {
         color: white !important;
     }
     
-    div[style*="background: linear-gradient(135deg, #1e40af"] div {
+    div[style*="background: linear-gradient(135deg, #1e293b"] div {
         color: white !important;
     }
     
     /* More specific targeting for the custom cards */
-    .stMarkdown div[style*="#1e40af"] * {
+    .stMarkdown div[style*="#1e293b"] * {
         color: white !important;
     }
     
@@ -623,7 +626,7 @@ st.markdown(
     }
     
     /* Target any element with blue background gradient */
-    [style*="linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%)"] * {
+    [style*="linear-gradient(135deg, #1e293b 0%, #334155 100%)"] * {
         color: white !important;
     }
 </style>
@@ -653,8 +656,8 @@ def apply_chart_styling(fig, height=500, title_size=16):
         height=height,
         title_font_size=title_size,
         title_x=0.5,
-        plot_bgcolor="rgba(30,58,138,1)",
-        paper_bgcolor="rgba(30,64,175,1)",
+        plot_bgcolor="rgba(30,41,59,1)",  # Dark slate background (#1e293b)
+        paper_bgcolor="rgba(51,65,85,1)",  # Slightly lighter slate (#334155)
         font=dict(color="white", size=13, family="Arial, sans-serif"),
         title_font=dict(
             color="white", size=title_size, family="Arial, sans-serif", weight="bold"
@@ -684,7 +687,7 @@ def apply_chart_styling(fig, height=500, title_size=16):
             linecolor="rgba(255,255,255,0.2)",
         ),
         legend=dict(
-            bgcolor="rgba(30,58,138,0.9)",
+            bgcolor="rgba(51,65,85,0.9)",
             bordercolor="rgba(255,255,255,0.3)",
             borderwidth=2,
             font=dict(
@@ -777,8 +780,8 @@ def display_kpis(kpis, df):
             ).update_layout(
                 margin=dict(t=20, b=5, l=5, r=5),
                 showlegend=True,
-                plot_bgcolor="rgba(30,58,138,1)",
-                paper_bgcolor="rgba(30,64,175,1)",
+                plot_bgcolor="rgba(30,41,59,1)",  # Dark slate background (#1e293b)
+                paper_bgcolor="rgba(51,65,85,1)",  # Slightly lighter slate (#334155)
                 font=dict(color="white", size=10),
             ),
             use_container_width=True,
@@ -888,8 +891,8 @@ def create_distribution_chart(df):
         height=500,
         title_font_size=16,
         title_x=0.5,
-        plot_bgcolor="rgba(30,58,138,1)",
-        paper_bgcolor="rgba(30,64,175,1)",
+        plot_bgcolor="rgba(30,41,59,1)",  # Dark slate background (#1e293b)
+        paper_bgcolor="rgba(51,65,85,1)",  # Slightly lighter slate (#334155)
         font=dict(color="white", size=12),
         title_font_color="white",
         xaxis=dict(
@@ -903,7 +906,7 @@ def create_distribution_chart(df):
             tickfont=dict(color="white", size=11),
         ),
         legend=dict(
-            bgcolor="rgba(30,58,138,0.9)",
+            bgcolor="rgba(51,65,85,0.9)",
             bordercolor="rgba(255,255,255,0.3)",
             borderwidth=1,
             font=dict(color="white"),
@@ -956,8 +959,8 @@ def create_state_condition_chart(df):
         height=500,  # Changed from 450 to 500 to match distribution chart
         title_font_size=16,
         title_x=0.5,
-        plot_bgcolor="rgba(30,58,138,1)",
-        paper_bgcolor="rgba(30,64,175,1)",
+        plot_bgcolor="rgba(30,41,59,1)",
+        paper_bgcolor="rgba(51,65,85,1)",
         font=dict(color="white", size=12),
         title_font_color="white",
         xaxis=dict(
@@ -1018,8 +1021,8 @@ def create_detailed_category_breakdown(df):
             height=400,
             title_font_size=14,
             title_font_color="white",
-            plot_bgcolor="rgba(30,58,138,1)",
-            paper_bgcolor="rgba(30,64,175,1)",
+            plot_bgcolor="rgba(30,41,59,1)",  # Dark slate background (#1e293b)
+            paper_bgcolor="rgba(51,65,85,1)",  # Slightly lighter slate (#334155)
             font=dict(color="white", size=12),
             xaxis_tickangle=-45,
             xaxis_title_font_size=12,
@@ -1040,7 +1043,7 @@ def create_detailed_category_breakdown(df):
                 y=1.02,
                 xanchor="right",
                 x=1,
-                bgcolor="rgba(30,58,138,0.9)",
+                bgcolor="rgba(51,65,85,0.9)",
                 bordercolor="rgba(255,255,255,0.3)",
                 borderwidth=1,
                 font=dict(color="white"),
@@ -1152,8 +1155,8 @@ def create_maintenance_priority_chart(df):
         title_font_color="white",
         height=400,
         barmode="stack",
-        plot_bgcolor="rgba(30,58,138,1)",
-        paper_bgcolor="rgba(30,64,175,1)",
+        plot_bgcolor="rgba(30,41,59,1)",
+        paper_bgcolor="rgba(51,65,85,1)",
         font=dict(color="white", size=12),
         xaxis=dict(
             title="Number of Assets",
@@ -1172,7 +1175,7 @@ def create_maintenance_priority_chart(df):
             y=1.02,
             xanchor="right",
             x=1,
-            bgcolor="rgba(30,58,138,0.9)",
+            bgcolor="rgba(51,65,85,0.9)",
             bordercolor="rgba(255,255,255,0.3)",
             borderwidth=1,
             font=dict(color="white"),
@@ -1257,8 +1260,8 @@ def create_forecast_charts(df, months_ahead=6):
         height=500,
         title_font_size=16,
         title_x=0.5,
-        plot_bgcolor="rgba(30,58,138,1)",
-        paper_bgcolor="rgba(30,64,175,1)",
+        plot_bgcolor="rgba(30,41,59,1)",
+        paper_bgcolor="rgba(51,65,85,1)",
         font=dict(color="white", size=12),
         title_font_color="white",
         xaxis=dict(
@@ -1272,7 +1275,7 @@ def create_forecast_charts(df, months_ahead=6):
             tickfont=dict(color="white", size=11),
         ),
         legend=dict(
-            bgcolor="rgba(30,58,138,0.9)",
+            bgcolor="rgba(51,65,85,0.9)",
             bordercolor="rgba(255,255,255,0.3)",
             borderwidth=1,
             font=dict(color="white"),
@@ -1298,8 +1301,8 @@ def create_forecast_charts(df, months_ahead=6):
         height=500,  # Changed from 400 to 500 to match fig1 for better alignment
         title_font_size=16,
         title_x=0.5,
-        plot_bgcolor="rgba(30,58,138,1)",
-        paper_bgcolor="rgba(30,64,175,1)",
+        plot_bgcolor="rgba(30,41,59,1)",
+        paper_bgcolor="rgba(51,65,85,1)",
         font=dict(color="white", size=12),
         title_font_color="white",
         xaxis=dict(
@@ -1313,7 +1316,7 @@ def create_forecast_charts(df, months_ahead=6):
             tickfont=dict(color="white", size=11),
         ),
         legend=dict(
-            bgcolor="rgba(30,58,138,0.9)",
+            bgcolor="rgba(51,65,85,0.9)",
             bordercolor="rgba(255,255,255,0.3)",
             borderwidth=1,
             font=dict(color="white"),
@@ -1381,8 +1384,8 @@ def create_forecast_charts(df, months_ahead=6):
         title_font_size=18,
         title_x=0.5,
         title_font_weight="bold",
-        plot_bgcolor="rgba(30,58,138,1)",
-        paper_bgcolor="rgba(30,64,175,1)",
+        plot_bgcolor="rgba(30,41,59,1)",
+        paper_bgcolor="rgba(51,65,85,1)",
         font=dict(color="white", size=12),
         title_font_color="white",
         xaxis=dict(
@@ -1503,8 +1506,8 @@ def create_asset_type_forecast(df, category, months_ahead=6):
         height=400,
         title_font_size=14,
         title_x=0.5,
-        plot_bgcolor="rgba(30,58,138,1)",
-        paper_bgcolor="rgba(30,64,175,1)",
+        plot_bgcolor="rgba(30,41,59,1)",
+        paper_bgcolor="rgba(51,65,85,1)",
         font=dict(color="white", size=12),
         title_font_color="white",
         xaxis=dict(
@@ -1518,7 +1521,7 @@ def create_asset_type_forecast(df, category, months_ahead=6):
             tickfont=dict(color="white", size=11),
         ),
         legend=dict(
-            bgcolor="rgba(30,58,138,0.9)",
+            bgcolor="rgba(51,65,85,0.9)",
             bordercolor="rgba(255,255,255,0.3)",
             borderwidth=1,
             font=dict(color="white"),
@@ -1815,24 +1818,26 @@ def generate_expired_stock_report(df, filename="Expired_Stock_List.docx"):
             )
         ].copy()
 
-        # Create table with exact column structure from image - 12 columns total
-        table = doc.add_table(rows=2, cols=12)  # Header + sub-header rows
+        # Create table with exact column structure from reference image
+        # Structure: Bil, Perihal Stok, No.Kod, Lokasi Stok, Kuantiti Termasuk, Tarikh Luput, 6 bulan, 5 bulan, 4 bulan, 3 bulan, 2 bulan, 1 bulan, Catatan
+        table = doc.add_table(rows=2, cols=13)  # Header + sub-header rows
         table.style = "Table Grid"
 
-        # Set column widths - smaller for month columns
+        # Set column widths to match reference format
         col_widths = [
-            Inches(0.4),
-            Inches(1.8),
-            Inches(0.8),
-            Inches(1.2),
-            Inches(0.6),
-            Inches(0.8),
-            Inches(0.5),
-            Inches(0.5),
-            Inches(0.5),
-            Inches(0.5),
-            Inches(0.5),
-            Inches(0.5),
+            Inches(0.3),  # Bil.
+            Inches(1.5),  # Perihal Stok
+            Inches(0.7),  # No. Kod
+            Inches(1.0),  # Lokasi Stok
+            Inches(0.6),  # Kuantiti Termasuk
+            Inches(0.7),  # Tarikh Luput
+            Inches(0.4),  # 6 bulan
+            Inches(0.4),  # 5 bulan
+            Inches(0.4),  # 4 bulan
+            Inches(0.4),  # 3 bulan
+            Inches(0.4),  # 2 bulan
+            Inches(0.4),  # 1 bulan
+            Inches(1.0),  # Catatan
         ]
 
         for i, col in enumerate(table.columns):
@@ -1843,7 +1848,7 @@ def generate_expired_stock_report(df, filename="Expired_Stock_List.docx"):
         # Main header row
         hdr_cells = table.rows[0].cells
 
-        # Set main headers
+        # Set main headers according to reference image
         hdr_cells[0].text = "Bil."
         hdr_cells[1].text = "Perihal Stok"
         hdr_cells[2].text = "No. Kod"
@@ -1851,18 +1856,25 @@ def generate_expired_stock_report(df, filename="Expired_Stock_List.docx"):
         hdr_cells[4].text = "Kuantiti Termasuk"
         hdr_cells[5].text = "Tarikh Luput"
 
-        # Merge cells 6-11 for "Baki Stok Bagi 6 Bulan Sebelum Tarikh Tempoh Luput"
-        # We'll put the title in the first cell and clear others
-        merge_cell = hdr_cells[6]
-        merge_cell.text = "Baki Stok Bagi 6 Bulan Sebelum Tarikh Tempoh Luput\n*(Kuantiti dan tarikh kemaskini)"
-        hdr_cells[7].text = ""
-        hdr_cells[8].text = ""
-        hdr_cells[9].text = ""
-        hdr_cells[10].text = ""
-        hdr_cells[11].text = "Catatan"
+        # Merge cells for "Baki Stok" header (columns 6-11) - this creates one single merged cell
+        merged_cell = (
+            hdr_cells[6]
+            .merge(hdr_cells[7])
+            .merge(hdr_cells[8])
+            .merge(hdr_cells[9])
+            .merge(hdr_cells[10])
+            .merge(hdr_cells[11])
+        )
+        merged_cell.text = "Baki Stok Bagi 6 Bulan Sebelum Tarikh Tempoh Luput\n*(Kuantiti dan tarikh kemaskini)"
+
+        hdr_cells[12].text = "Catatan"
 
         # Format main header
         for i, cell in enumerate(hdr_cells):
+            # Skip the merged cells (7-11) as they are now part of cell 6
+            if i in [7, 8, 9, 10, 11]:
+                continue
+
             for paragraph in cell.paragraphs:
                 paragraph.alignment = 1  # Center alignment
                 for run in paragraph.runs:
@@ -1871,7 +1883,7 @@ def generate_expired_stock_report(df, filename="Expired_Stock_List.docx"):
                         Pt(9) if i != 6 else Pt(8)
                     )  # Smaller font for merged header
 
-        # Sub-header row for individual month columns
+        # Sub-header row for month columns
         sub_hdr_cells = table.rows[1].cells
         sub_hdr_cells[0].text = ""  # Bil.
         sub_hdr_cells[1].text = ""  # Perihal Stok
@@ -1885,6 +1897,7 @@ def generate_expired_stock_report(df, filename="Expired_Stock_List.docx"):
         sub_hdr_cells[9].text = "3\nbulan"
         sub_hdr_cells[10].text = "2\nbulan"
         sub_hdr_cells[11].text = "1\nbulan"
+        sub_hdr_cells[12].text = ""  # Catatan
 
         # Format sub-headers
         for i, cell in enumerate(sub_hdr_cells):
@@ -1892,7 +1905,7 @@ def generate_expired_stock_report(df, filename="Expired_Stock_List.docx"):
                 paragraph.alignment = 1  # Center alignment
                 for run in paragraph.runs:
                     run.font.size = Pt(8)
-                    if i >= 6 and i <= 10:  # Month columns
+                    if 6 <= i <= 11:  # Month columns
                         run.font.bold = True
 
         # Add data rows (limit to first 10 items for readability)
@@ -1924,15 +1937,15 @@ def generate_expired_stock_report(df, filename="Expired_Stock_List.docx"):
             except:
                 asset_age = 0
 
-            # Sample quantity distribution based on age - individual columns for each month
-            qty_6 = "1" if asset_age > 5 else ""
-            qty_5 = "1" if 4 < asset_age <= 5 else ""
-            qty_4 = "1" if 3 < asset_age <= 4 else ""
-            qty_3 = "1" if 2 < asset_age <= 3 else ""
-            qty_2 = "1" if 1 < asset_age <= 2 else ""
-            qty_1 = "1" if asset_age <= 1 else ""
+            # Sample quantity distribution for each month column
+            qty_6_month = "1" if asset_age > 5 else ""
+            qty_5_month = "1" if 4 < asset_age <= 5 else ""
+            qty_4_month = "1" if 3 < asset_age <= 4 else ""
+            qty_3_month = "1" if 2 < asset_age <= 3 else ""
+            qty_2_month = "1" if 1 < asset_age <= 2 else ""
+            qty_1_month = "1" if asset_age <= 1 else ""
 
-            # Fill data - now with 12 columns
+            # Fill data - now with 13 columns structure
             data = [
                 str(idx),  # Bil
                 f"{item['type']}\n{item['vendor'] if pd.notna(item['vendor']) else 'N/A'}".strip(),  # Perihal Stok
@@ -1944,33 +1957,28 @@ def generate_expired_stock_report(df, filename="Expired_Stock_List.docx"):
                 ),
                 "1",  # Kuantiti Termasuk - Assuming 1 unit per asset
                 tarikh_luput,  # Tarikh Luput
-                qty_6,  # 6 bulan
-                qty_5,  # 5 bulan
-                qty_4,  # 4 bulan
-                qty_3,  # 3 bulan
-                qty_2,  # 2 bulan
-                qty_1,  # 1 bulan
+                qty_6_month,  # 6 bulan
+                qty_5_month,  # 5 bulan
+                qty_4_month,  # 4 bulan
+                qty_3_month,  # 3 bulan
+                qty_2_month,  # 2 bulan
+                qty_1_month,  # 1 bulan
+                catatan,  # Catatan
             ]
 
-            # Fill the row cells - only fill up to 11 columns (data), last column is catatan
+            # Fill the row cells
             for i, cell_data in enumerate(data):
-                if i < 11:  # Fill first 11 columns with data
+                if i < 13:  # Fill all 13 columns
                     row_cells[i].text = str(cell_data)
                     # Format cell text
                     for paragraph in row_cells[i].paragraphs:
                         for run in paragraph.runs:
                             run.font.size = Pt(8)
 
-            # Fill catatan in the last column (index 11)
-            row_cells[11].text = catatan
-            for paragraph in row_cells[11].paragraphs:
-                for run in paragraph.runs:
-                    run.font.size = Pt(8)
-
         # Add empty rows for manual completion
         for i in range(15):  # Add 15 empty rows
             row_cells = table.add_row().cells
-            for j in range(12):  # Now 12 columns
+            for j in range(13):  # Now 13 columns
                 row_cells[j].text = ""
 
         doc.add_paragraph()  # Empty line
@@ -2638,11 +2646,11 @@ def main():
         # Display header with logo
         st.markdown(
             f"""
-            <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                         padding: 2rem; 
                         border-radius: 15px; 
-                        box-shadow: 0 8px 20px rgba(30,64,175,0.3);
-                        border: 1px solid #3b82f6;
+                        box-shadow: 0 8px 20px rgba(30,41,59,0.3);
+                        border: 1px solid #475569;
                         margin-bottom: 2rem;
                         display: flex;
                         align-items: center;
@@ -2666,11 +2674,11 @@ def main():
         # Fallback without logo
         st.markdown(
             """
-            <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                         padding: 2rem; 
                         border-radius: 15px; 
-                        box-shadow: 0 8px 20px rgba(30,64,175,0.3);
-                        border: 1px solid #3b82f6;
+                        box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+                        border: 1px solid #475569;
                         margin-bottom: 2rem;
                         text-align: center;">
                 <div style="font-size: 2.5rem; font-weight: bold; color: white;">
@@ -2770,13 +2778,15 @@ def main():
                 x="category",
                 title="Assets Due for Maintenance (Next 3 Months)",
                 labels={"category": "Category", "count": "Number of Assets"},
-                color_discrete_sequence=["#87CEEB"],
+                color_discrete_sequence=[
+                    "#475569"
+                ],  # Changed from #87CEEB to match dark theme
             )
             fig_upcoming.update_layout(
                 height=500,  # Set consistent height
                 title_font_size=14,
-                plot_bgcolor="rgba(30,58,138,1)",
-                paper_bgcolor="rgba(30,64,175,1)",
+                plot_bgcolor="rgba(30,41,59,1)",
+                paper_bgcolor="rgba(51,65,85,1)",
                 font=dict(color="white", size=12),
                 title_font_color="white",
                 xaxis=dict(
@@ -2812,18 +2822,18 @@ def main():
         # Category summary metrics
         category_metrics = create_category_summary_metrics(filtered_df)
 
-        # Display category metrics in columns with blue gradient cardboxes
+        # Display category metrics in columns with dark gradient cardboxes
         cols = st.columns(len(category_metrics))
         for i, (category, metrics) in enumerate(category_metrics.items()):
             with cols[i]:
                 st.markdown(
                     f"""
                     <div style="
-                        background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+                        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
                         padding: 1.5rem;
                         border-radius: 12px;
                         border: 1px solid rgba(255,255,255,0.2);
-                        box-shadow: 0 4px 15px rgba(30,64,175,0.3);
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
                         margin-bottom: 1rem;
                         text-align: center;
                         color: white;
@@ -2905,11 +2915,11 @@ def main():
             with col1:
                 st.markdown(
                     f"""
-                    <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+                    <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                                 padding: 1.5rem; 
                                 border-radius: 12px; 
-                                box-shadow: 0 4px 12px rgba(30,64,175,0.3);
-                                border: 1px solid #3b82f6;
+                                box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+                                border: 1px solid #475569;
                                 text-align: center;
                                 transition: all 0.3s ease;">
                         <p style="color: #e0e7ff !important; font-size: 0.875rem; margin: 0; font-weight: 500;">Model Type</p>
@@ -2921,11 +2931,11 @@ def main():
             with col2:
                 st.markdown(
                     f"""
-                    <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+                    <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                                 padding: 1.5rem; 
                                 border-radius: 12px; 
-                                box-shadow: 0 4px 12px rgba(30,64,175,0.3);
-                                border: 1px solid #3b82f6;
+                                box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+                                border: 1px solid #475569;
                                 text-align: center;
                                 transition: all 0.3s ease;">
                         <p style="color: #e0e7ff !important; font-size: 0.875rem; margin: 0; font-weight: 500;">Accuracy</p>
@@ -2937,11 +2947,11 @@ def main():
             with col3:
                 st.markdown(
                     f"""
-                    <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+                    <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                                 padding: 1.5rem; 
                                 border-radius: 12px; 
-                                box-shadow: 0 4px 12px rgba(30,64,175,0.3);
-                                border: 1px solid #3b82f6;
+                                box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+                                border: 1px solid #475569;
                                 text-align: center;
                                 transition: all 0.3s ease;">
                         <p style="color: #e0e7ff !important; font-size: 0.875rem; margin: 0; font-weight: 500;">F1-Score</p>
@@ -2958,10 +2968,10 @@ def main():
         with col1:
             st.markdown(
                 """
-                <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+                <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                             padding: 1.2rem; 
                             border-radius: 12px; 
-                            box-shadow: 0 4px 12px rgba(30,64,175,0.4);
+                            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
                             border: 1px solid rgba(255,255,255,0.2);
                             transition: all 0.3s ease;">
                     <p style="color: white !important; font-size: 0.875rem; margin: 0 0 0.8rem 0; font-weight: 500;">Forecast Period</p>
@@ -3035,10 +3045,10 @@ def main():
         with col1:
             # Key Insights Card
             insights_html = """
-            <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                         padding: 1.5rem; 
                         border-radius: 12px; 
-                        box-shadow: 0 4px 12px rgba(30,64,175,0.4);
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
                         border: 1px solid rgba(255,255,255,0.2);
                         margin-bottom: 1rem;
                         transition: all 0.3s ease;">
@@ -3058,10 +3068,10 @@ def main():
             )
 
             stats_html = f"""
-            <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                         padding: 1.5rem; 
                         border-radius: 12px; 
-                        box-shadow: 0 4px 12px rgba(30,64,175,0.4);
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
                         border: 1px solid rgba(255,255,255,0.2);
                         margin-bottom: 1rem;
                         transition: all 0.3s ease;">
@@ -3076,10 +3086,10 @@ def main():
         with col2:
             # Action Recommendations Card
             recommendations_html = """
-            <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                         padding: 1.5rem; 
                         border-radius: 12px; 
-                        box-shadow: 0 4px 12px rgba(30,64,175,0.4);
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
                         border: 1px solid rgba(255,255,255,0.2);
                         margin-bottom: 1rem;
                         transition: all 0.3s ease;">
@@ -3102,10 +3112,10 @@ def main():
             ]
 
             priority_html = """
-            <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                         padding: 1.5rem; 
                         border-radius: 12px; 
-                        box-shadow: 0 4px 12px rgba(30,64,175,0.4);
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
                         border: 1px solid rgba(255,255,255,0.2);
                         margin-bottom: 1rem;
                         transition: all 0.3s ease;">
@@ -3121,10 +3131,10 @@ def main():
         # Forecast summary table
         st.markdown(
             """
-            <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                         padding: 1.5rem; 
                         border-radius: 12px; 
-                        box-shadow: 0 4px 12px rgba(30,64,175,0.4);
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
                         border: 1px solid rgba(255,255,255,0.2);
                         margin-bottom: 1rem;
                         transition: all 0.3s ease;">
@@ -3152,10 +3162,10 @@ def main():
             index="Month", columns="Category", values="Total_Demand"
         ).fillna(0)
 
-        # Container for the dataframe with blue gradient background
+        # Container for the dataframe with dark gradient background
         st.markdown(
             """
-            <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                         padding: 1rem; 
                         border-radius: 8px; 
                         margin-bottom: 1rem;
@@ -3166,10 +3176,10 @@ def main():
         st.dataframe(pivot_table, use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
-        # Export forecast data with blue gradient background
+        # Export forecast data with dark gradient background
         st.markdown(
             """
-            <div style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
                         padding: 1rem; 
                         border-radius: 8px; 
                         margin-bottom: 1rem;
